@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KissanSevak.com</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<html>
+
+<body>
+    <div class="navbar" id="navbar">
+        <div class="logo"><a href="about.html"><img src="logo.png" alt="" width="100px"></a></div>
+        <div class="heading"><a href="about.html">KissanSevak</a></div>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <div class="drop-down"><li><a href="">INFORMATION</a>
+              <div class="dropdown-content">
+              <a href="rend.html">SOIL DETECTION</a>
+              <a href="info.html">LEARNING</a>
+              </div>
+            </div>
+            </li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+    </div>
+    <div class="pic" id="pic">
+        <img src="img6.png" alt="">
+    </div>
+    <div class="picQuote" id="picq">
+        <h1>PROUD to be a FARMER</h1>
+        <h3>Agriculture is our wisest pursuit, because it will in the end contribute most to real wealth, good morals and happiness.</h3>
+    </div>
+
+
+    <form id="frm1">
+        <div class="arya">pH: <input type="number" name="PH" placeholder="Enter pH" ></div>
+        <div class="arya">OC: <input type="number" name="OC" placeholder="Enter OC"></div>
+        <div class="arya">Nitrogen: <input type="number" name="N" placeholder="Enter Nitrogen"></div>
+        <div class="arya">Phosphurus: <input type="number" name="P" placeholder="Enter Phosphurus"></div>
+        <div class="arya">Potassium: <input type="number" name="K" placeholder="Enter Pottassium"></div>
+        <div class="arya">Sulphur: <input type="number" name="S" placeholder="Enter Sulphur"></div>
+        <div class="arya">Zinc: <input type="number" name="Zn" placeholder="Enter Zinc"></div>
+        <div class="arya">Boron: <input type="number" name="B" placeholder="Enter Boron"></div>
+        <div class="arya">Iron: <input type="text" name="Fe" placeholder="Enter Iron"></div>
+        <div class="arya">Manganese: <input type="text" name="Mn" placeholder="Enter Manganese"></div>
+        <div class="arya">Copper: <input type="text" name="Cu" placeholder="Enter Copper"></div>
+        <div class="aryabtw"><input type="button" id="btn1" onclick="myFunction()" value="Submit"></div>
+        <p id="demo"></p>
+    </form>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("frm1");
+            var text = "";
+            var i;
+            if (x.elements[0].value < 7) 
+            {
+                text += "Soil Nature is Acidic<br>";
+            } 
+            else if ((x.elements[0].value = 7)) 
+            {
+                text += "Soil Nature is Neutral<br>"
+            } 
+            else 
+            {
+                text += "Soil Nature is Basic<br>"
+            }
+
+            if (x.elements[1].value < 0.51) 
+            {
+                text += "Organic Carbon is low<br>"
+            } 
+            else if (x.elements[1].value > 0.75) 
+            {
+                text += "Organic Carbon is Excess<br>"
+            } 
+            else 
+            {
+                text += "Organic Carbon is Sufficient<br>"
+            }
+
+            if (x.elements[2].value < 250) 
+            {
+                text += "Nitrogen is low<br>"
+            } 
+            else if (x.elements[2].value > 560) 
+            {
+                text += "Nitrogen is Excess<br>"
+            } 
+            else 
+            {
+                text += "Nitrogen Carbon is Sufficient<br>"
+            }
+            if (x.elements[2].value < 250) {
+            text += "Good for Cotton <br>"
+            } 
+            else if (x.elements[2].value > 560) {
+            text += "Good for wheat and Rice<br>"
+            } 
+            else {
+            text += "Good for Sugarcane and Mustard <br>"
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+</body>
+<footer>
+    <div class="foot">
+      <div class="connect">
+          <p>Connect</p>
+          <a href="https://www.instagram.com/_rajkamal_yadav_/"><i class='bx bxl-instagram-alt'></i></a>
+          <a href="https://www.instagram.com/_rajkamal_yadav_/"><i class='bx bxl-facebook-square' ></i></a>
+          <a href="https://www.instagram.com/_rajkamal_yadav_/"><i class='bx bxl-linkedin-square'></i></a>
+          <a href="https://www.instagram.com/_rajkamal_yadav_/"><i class='bx bxl-youtube' ></i></a>
+          <a href="https://www.instagram.com/_rajkamal_yadav_/"><i class='bx bxl-twitter' ></i></a>
+      </div>  
+      <div class="link">
+          <p style="color: rgb(212, 212, 212);">Quicklinks</p>
+          <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="info.html">INFORMATION</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+      </div>   
+      <div class="link1">
+       <p>
+          <p style="color: rgb(212, 212, 212);">Developers : </p> <br>
+          <p>RAJKAMAL YADAV</p>
+          <p>ARYADEV YADAV</p>
+          <p>DEV YADAV</p>
+       </p>
+      </div>
+    </div>
+</footer>
+</html>
